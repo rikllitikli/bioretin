@@ -3,7 +3,13 @@
     padding: 0;
 }
 header {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(1, 131, 226, 0.15) 100%);
+    position: absolute;
+    padding: 8px 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
 }
 .navbar-light .navbar-toggler{
     background-color: #E31717;
@@ -93,21 +99,14 @@ header .botton:hover{
     font-weight: bold;
 }
 .scr_one{
-    padding: 37px 0 44px;
+    padding: 97px 0 44px;
     background-image: url("../img/bg_scr_one.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     position: relative;
 }
-.scr_one .woman img{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    max-width: 393px;
-    width: 100%;
-    z-index: 1;
-}
+
 .scr_one h1{
     font-size: 60px;
     background: linear-gradient(268.65deg, #000000 -3.1%, #438FC1 99.79%);
@@ -149,10 +148,14 @@ header .botton:hover{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(1, 131, 226, 0.15) 100%);
     box-shadow: 0px 1px 3px 0px #00000040;
     border-radius: 10px;
-    padding: 15px 20px;
-    max-width: 486px;
+    padding: 0 15px 20px;
+    max-width: 477px;
+    position: relative;
+    backdrop-filter: blur(8px);
 }
 .scr_one form h3{
+    position: relative;
+    right: 20px;
     max-width: 270px;
     font-size: 24px;
     color: #414141;
@@ -165,6 +168,7 @@ header .botton:hover{
     color: #CFCFCF;
     font-size: 24px;
     margin-bottom: 0;
+    margin-right: 13px;
 }
 .scr_one form h4{
     font-size: 36px;
@@ -174,4 +178,290 @@ header .botton:hover{
 .scr_one form p{
     font-size: 10px;
     color: #414141;
+    margin-bottom: 3px;
+}
+.scr_one form h5{
+    line-height: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+    max-width: 178px;
+}
+.scr_one form h5 span{
+    font-size: 13px;
+    font-weight: normal;
+}
+.scr_one form h5 color{
+    color: #438FC1;
+}
+.scr_one form img{
+    position: absolute;
+    left: -5px;
+    top: -20px;
+    max-width: 164px;
+    width: 100%;
+}
+.scr_one form input{
+    max-width: 245px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 0px #00000040;
+    border: none;
+    padding: 5px 8px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 26);
+}
+.scr_one form input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#00000026;
+}
+.scr_one form button{
+    max-width: 245px;
+    width: 100%;
+    padding: 5px 33px;
+    background: linear-gradient(180deg, #57B5F3 0%, #005E9C 100%);
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.scr_one .right .dermatologist{
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(1, 131, 226, 0.15) 100%);
+    box-shadow: 0px 1px 3px 0px #00000040;
+    padding: 10px 6px 14px 15px;
+    position: absolute;
+    bottom: -30px;
+    left: -144px;
+    z-index: 100;
+    margin-bottom: 0;
+    max-width: 418px;
+    width: 100%;
+    line-height: 17px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+.scr_one .woman img{
+    position: absolute;
+    right: 105px;
+    bottom: 0;
+    max-width: 393px;
+    width: 100%;
+    z-index: 1;
+}
+.scr_one .right .name_doctor{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(1, 131, 226, 0.15) 100%);
+    box-shadow: 0 1px 3px #00000040;
+    backdrop-filter: blur(8px);
+    padding: 8px 20px 7px;
+    max-width: 367px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 72px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scr_one .right .name_doctor h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: black;
+}
+.scr_one .right .name_doctor p{
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+.scr_one .right .name_doctor h4{
+    color: #414141;
+    box-shadow: 0px 0px 0px 0px #00000040;
+}
+.scr_one .right .name_doctor img{
+    padding-right: 5px;
+}
+.scr_two{
+    padding: 60px 0 75px;
+    background: linear-gradient(180deg, #EEF8FF -19.32%, #FFFFFF -19.3%, #EEF8FF 100%);
+}
+.scr_two ul .esc{
+    background-color:#FF5A79;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.scr_two ul .esc .left_stick{
+    height: 16px;
+    width: 4px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(320deg);
+}
+.scr_two ul .esc .right_stick{
+    height: 16px;
+    width: 4px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(404deg);
+}
+.scr_two ul{
+    margin-bottom: 27px;
+}
+.scr_two li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.scr_two li p{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0;
+}
+.scr_two h2{
+    font-size: 24px;
+    color: #438FC1;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+.scr_two .left img{
+    max-width: 108px;
+    width: 100%;
+}
+.scr_two .right img{
+    max-width: 539px;
+    width: 100%;
+}
+.scr_three{
+    padding: 70px 0 58px;
+    background: linear-gradient(180deg, #FFFFFF -19.32%, #E3E3E3 100%);
+}
+.scr_three h2{
+    font-size: 24px;
+    color: #438FC1;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.scr_three p{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    padding: 13px 13px 13px 40px;
+    background-color: white;
+    max-width: 749px;
+    width: 100%;
+}
+.scr_three .scr_three_img, .scr_three .scr_three_img img{
+    max-width: 400px;
+    width: 100%;
+}
+.scr_four{
+    padding: 58px 0 17px;
+    background: linear-gradient(180deg, #EEF8FF -19.32%, #FFFFFF -19.3%, #EEF8FF 100%);
+}
+.scr_four h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #438FC1;
+}
+.scr_four h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 21px;
+    color: black;
+}
+.scr_four p{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 21px;
+}
+.scr_four h4{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 800;
+}
+.scr_four a{
+    color: white;
+    font-size: 24px;
+    padding: 8px 53px;
+    font-weight: 400;
+    background: linear-gradient(180deg, #57B5F3 0%, #005E9C 100%);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.scr_five{
+    padding: 60px 0 36px;
+    background: linear-gradient(180deg, #86A1FF -43.13%, #000000 100%);
+}
+.scr_five .left img{
+    margin-right: 17px;
+}
+.scr_five h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.scr_five h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.scr_five h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.scr_five ul{
+    margin-bottom: 63px;
+}
+.scr_five li{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 22px;
+}
+.scr_five li p{
+    color: white;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.scr_five .right img{
+    width: 100%;
+}
+.scr_five a{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px 53px;
+    text-decoration: none;
+    background: linear-gradient(180deg, #57B5F3 0%, #005E9C 100%);
+    border-radius: 5px;
+}
+.scr_six{
+    padding: 60px 0 35px;
+}
+.scr_six h2{
+    font-size: 24px;
+    margin-bottom: 37px;
+    color: #438FC1;
 }
