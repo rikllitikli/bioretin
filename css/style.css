@@ -533,3 +533,93 @@ header .botton:hover{
     font-size: 16px;
     font-weight: 800;
 }
+.scr_eit{
+    padding: 35px 0 27px;
+}
+.scr_eit h2{
+    font-size: 24px;
+    color: #438FC1;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.scr_eit .left img{
+    margin-right: 25px;
+}
+.scr_eit li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 22px;
+}
+.scr_eit li p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 0;
+}
+.scr_eit h4{
+    font-size: 18px;
+    color: #438FC1;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.scr_eit .right img{
+    max-width: 312px;
+    width: 100%;
+    margin: auto;
+}
+
+.scr_eit .owl-nav {
+    position: absolute;
+    top: 95px;
+    width: 100%; }
+
+.scr_eit .owl-nav .owl-prev {
+    position: absolute;
+    left: 0}
+@media screen and (max-width: 411px) {
+    .scr_eit  .owl-nav .owl-prev {
+        left: 10px; } }
+
+.scr_eit .owl-nav .owl-prev:before {
+    content: "";
+    display: block;
+    background-image: url("../img/arrow_left.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat; }
+
+.scr_eit .owl-nav .owl-next {
+    position: absolute;
+    right: -9px}
+@media screen and (max-width: 411px) {
+    .scr_eit .owl-nav .owl-next {
+        right: 10px; } }
+
+.scr_eit .owl-nav .owl-next:before {
+    content: "";
+    display: block;
+    background-image: url("../img/arrow_right.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    }
+
+.scr_eit .owl-drag {
+    text-align: center; }
+
+.scr_eit .owl-dots {
+    position: relative;
+    bottom: -10px; }
+
+.scr_eit .owl-dot span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 5px solid #438FC126;
+    border-radius: 100%;
+    margin-right: 10px; }
+
+.scr_eit .owl-dot.active span {
+    background-color: #438FC1}
