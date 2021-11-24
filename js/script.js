@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel({
+    $('.slider').owlCarousel({
         loop:true,
         margin:0,
         nav:true,
@@ -16,50 +16,73 @@ $(document).ready(function(){
             }
         }
     });
+    $('.slider_two').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        navText: [ '', ' ' ],
+
+        responsive:{
+            1000:{
+                items:3
+            },
+            992:{
+                items:3
+            },
+            576:{
+                items:3
+            },
+            575:{
+                items:1
+            },
+            414:{
+                items:1
+            },
+            413:{
+                items:1
+            },
+            0:{
+                items:1
+            },
+        }
+    });
 });
 
-$('.btn_q').on('click', function(){
-    $('.text_q').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_w').on('click', function(){
-    $('.text_w').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_e').on('click', function(){
-    $('.text_e').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_r').on('click', function(){
-    $('.text_r').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_t').on('click', function(){
-    $('.text_t').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_y').on('click', function(){
-    $('.text_y').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_u').on('click', function(){
-    $('.text_u').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_i').on('click', function(){
-    $('.text_i').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
-$('.btn_o').on('click', function(){
-    $('.text_o').fadeToggle('slow');
-    //or
-    //$(this).next().fadeToggle('slow');
-});
+var countDownDate = new Date("Oct 10, 2023 00:00:00").getTime();
+
+var countDownFunction = setInterval(function (){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    document.getElementById("hours").innerHTML =
+        hours + ""
+    if (distance < 0) {
+        clearInterval(countDownFunction);
+        document.getElementById("hours").innerHTML = "0";
+    }
+}, 1000)
+var countDownFunction = setInterval(function (){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("minutes").innerHTML =
+        minutes + ""
+    if (distance < 0) {
+        clearInterval(countDownFunction);
+        document.getElementById("minutes").innerHTML = "0";
+    }
+} , 1000)
+var countDownFunction = setInterval(function (){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("secondes").innerHTML =
+        seconds + "";
+    if (distance < 0) {
+        clearInterval(countDownFunction);
+        document.getElementById("secondes").innerHTML = "0";
+    }
+} , 1000)
