@@ -12,8 +12,9 @@ header {
     z-index: 100;
 }
 .navbar-light .navbar-toggler{
-    background-color: #E31717;
+    background: linear-gradient(180deg, #D2E8F8 0%, #479DD6 100%);
     z-index: 80;
+    margin-right: 10px;
 }
 
 @media (max-width: 991px) {
@@ -24,7 +25,8 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: black;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(1, 131, 226, 0.15) 100%);
+        backdrop-filter:blur(8px);
         z-index: 80;
         padding: 30px 10px;
     }
