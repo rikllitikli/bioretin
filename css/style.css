@@ -915,10 +915,10 @@ header .botton:hover{
 
 .scr_eit .owl-nav .owl-prev {
     position: absolute;
-    left: 0}
+    left: -18px}
 @media screen and (max-width: 411px) {
     .scr_eit  .owl-nav .owl-prev {
-        left: -32px; } }
+        left: -18px; } }
 
 .scr_eit .owl-nav .owl-prev:before {
     content: "";
@@ -940,7 +940,7 @@ header .botton:hover{
     right: -9px}
 @media screen and (max-width: 411px) {
     .scr_eit .owl-nav .owl-next {
-        right: -31px; } }
+        right: -22px; } }
 
 .scr_eit .owl-nav .owl-next:before {
     content: "";
@@ -1082,7 +1082,7 @@ header .botton:hover{
     left: -37px}
 @media screen and (max-width: 411px) {
     .partners  .owl-nav .owl-prev {
-        left: 0 } }
+        left: 10px } }
 
 .partners .owl-nav .owl-prev:before {
     content: "";
@@ -1103,7 +1103,7 @@ header .botton:hover{
     right: -49px}
 @media screen and (max-width: 411px) {
     .partners .owl-nav .owl-next {
-        right: 0; } }
+        right: 15px; } }
 
 .partners .owl-nav .owl-next:before {
     content: "";
@@ -1205,7 +1205,7 @@ header .botton:hover{
     left: -37px}
 @media screen and (max-width: 411px) {
     .coment  .owl-nav .owl-prev {
-        left: 0 } }
+        left: 10px } }
 
 .coment .owl-nav .owl-prev:before {
     content: "";
@@ -1227,7 +1227,7 @@ header .botton:hover{
     right: -49px}
 @media screen and (max-width: 411px) {
     .coment .owl-nav .owl-next {
-        right: 0; } }
+        right: 7px; } }
 
 .coment .owl-nav .owl-next:before {
     content: "";
