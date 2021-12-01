@@ -1198,7 +1198,7 @@ header .botton:hover{
 }
 .coment .owl-nav {
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     width: 100%; }
 @media (max-width: 992px) {
     .coment .owl-nav{
